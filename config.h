@@ -1,0 +1,15 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define N 1024
+#define TILE_SIZE 16
+#define OPT_TILE_SIZE 32
+#define COARSE_FACTOR 2
+
+#define VECTOR_WIDTH 4
+#define VECTOR_COARSE_FACTOR 4
+#define VECTOR_THREADS_X (OPT_TILE_SIZE / VECTOR_WIDTH)
+
+#define PEAK_BW_GBPS 300.0f
+
+#endif

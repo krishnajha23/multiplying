@@ -2,7 +2,8 @@
 #define UTILS_H
 
 void init_matrix(float* mat, int n);
-bool matrices_equal(float* A, float* B, int n, float tol = 1e-3);
+bool matrices_equal(float* A, float* B, int n, float tol = 1e-3f);
 double compute_gflops(int n, double time_ms);
+double compute_total_flops(int n);
 
 #endif

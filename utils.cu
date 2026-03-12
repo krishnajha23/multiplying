@@ -24,3 +24,7 @@ double compute_gflops(int n, double time_ms) {
     double time_s = time_ms / 1000.0;
     return (flops / time_s) / 1e9;
 }
+
+double compute_total_flops(int n) {
+    return 2.0 * (double)n * (double)n * (double)n;
+}
